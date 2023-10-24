@@ -2,23 +2,26 @@
     <head>
         <title>Document</title>
         <script src="{{asset('assets/js/jquery.js')}}"></script>
+        <link rel="stylesheet" href="{{asset('assets/style.css')}}">
+
+
     </head>
     <body>
-        <h1> COUNTRY - STATE - CITY  </h1>
+        <h1 > COUNTRY - STATE - CITY  </h1>
         SELECT COUNTRY : <select id="country">
-            <option value="">Select by Country-name </option>   
+            <option value=""></option>   
             @foreach ($countries as $country)
                 <option value="{{$country->id}}">{{$country->country}}</option>
             @endforeach 
         </select>
         <br><br>
         SELECT STATE : <select id="state">
-            <option value="">Select by State-name</option>    
+            <option value=""></option>    
         </select>
         <br><br>
 
         SELECT CITY : <select id="city">
-            <option value="">Select by City-name</option>    
+            <option value=""></option>    
         </select>
         <br><br>
 

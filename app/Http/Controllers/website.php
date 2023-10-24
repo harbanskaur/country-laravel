@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\country;
-use App\Models\city;
-use App\Models\state;
+use App\Models\country;//model
+use App\Models\city;//model
+use App\Models\state;//model
 use Illuminate\Http\Request;
 
 class website extends Controller
